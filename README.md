@@ -62,6 +62,43 @@ Interface prepared for the admin to see the news they have add, delete, update t
 
 
 
+RESTAPI :  
+  
+1-  
+Desired endpoint to create a new user  
+
+```
+URL POST:
+http://127.0.0.1/challange/register/  
+
+```
+and  
+```
+data ={
+
+"mail":"test@gmail.com",
+"name_surname":"test",
+"password":"test"
+}
+```  
+
+  
+
+2-  
+Pulls the latest news shared by the admin  
+
+
+```
+News GET:  
+r=requests.get('http://127.0.0.1/v1/boraq/news')   
+```
+
+
+
+
+
+
+
 
 
   
