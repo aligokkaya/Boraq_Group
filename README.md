@@ -10,8 +10,10 @@ Setup:
   
 By pulling the codes from the repo, the order is first brought to the Flask dockerfile.  
   
+```
 docker build ./ --tag boraq_group  
 docker run --restart always -d --network=host --name boraqdeploy boraq_group  
+```
 
 The site consists of 3 stages.  
 
@@ -39,11 +41,13 @@ Details of news published by admin
   
 ![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/4.png?raw=true)
   
+```
 Admin Login :  
     boraq123@gmail.com  
 password:  
     boraq123  
-
+       
+```
 
 interface where admin will add news:
   
