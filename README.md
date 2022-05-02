@@ -39,25 +39,25 @@ Details of news published by admin
 
 3-Admin login page:  
   
-![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/4.png?raw=true)
+![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/4.png)
   
 ```
 Admin Login :  
     boraq123@gmail.com  
 password:  
     boraq123  
-       
+
 ```
 
 interface where admin will add news:
   
-![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/5.png?raw=true)
+![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/5.png)
 
   
 Interface prepared for the admin to see the news they have add, delete, update these news in the database.  
 
    
-![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/6.png?raw=true)
+![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/6.png)
 
 
 
