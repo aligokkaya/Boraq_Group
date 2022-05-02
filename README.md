@@ -51,7 +51,7 @@ password:
 
 interface where admin will add news:
   
-![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/5.png)
+![alt text](https://github.com/aligokkaya/Boraq_Group/blob/main/readme_image/51.png)
 
   
 Interface prepared for the admin to see the news they have add, delete, update these news in the database.  
