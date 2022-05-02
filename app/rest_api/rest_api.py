@@ -15,6 +15,9 @@ api = Api(app)
 class Boraq_New(Resource):
     def get(self):
         myresult=db_con()
+        mycursor = myresult.cursor(dictionary=True)
+        mycursor.execute("SELECT * FROM admin_news")
+        myresult = mycursor.fetchall()
         return jsonify({'daily':myresult})
   
 class Register(Resource):
