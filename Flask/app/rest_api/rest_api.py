@@ -3,7 +3,7 @@ from flask import Blueprint
 from flask import current_app as app
 from flask import request,make_response,jsonify
 from flask_restful import Resource, Api
-from app.database.db import connect
+from app.database.db import con
 from app.schemas.admin_news import Admin_News
 from app.schemas.users import Users
 
@@ -17,13 +17,16 @@ api = Api(app)
 
 class Boraq_New(Resource):
     def get(self):
+        connect=con()
         myresult=connect.execute(Admin_News.select()).fetchall()
         return jsonify({'daily':myresult})
   
 class Register(Resource):
     def post(self):
+        
         data = request.form.to_dict()
         if len(data['name-surname']) > 1 and len(data['mail']) > 1 and len(data['password']) > 1 :
+            connect=con()
             connect.execute(Users.insert().values(
                     name_surname = str(data['name-surname']),
                     mail = str(data['mail']),

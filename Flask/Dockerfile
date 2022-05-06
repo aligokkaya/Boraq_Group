@@ -36,6 +36,10 @@ RUN a2ensite apache-flask.conf
 RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
     ln -sf /proc/self/fd/1 /var/log/apache2/error.log
 
+
+RUN chown -R www-data:www-data /var/www/apache-flask/app/static
+RUN chmod 755 /var/www/apache-flask/app/static
+VOLUME /var/www/apache-flask
 EXPOSE 80
 WORKDIR /var/www/apache-flask
 CMD  /usr/sbin/apache2ctl -D FOREGROUND
