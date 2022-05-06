@@ -1,7 +1,7 @@
 # Boraq_Group
 
 Project  
-Flask + BluePrint + MySql + RestApi + Docker + Apache Deploy  
+Flask + BluePrint +SQLAlchemy+ MySql + RestApi + Docker + Apache Deploy  
 
 This project news site  
 
